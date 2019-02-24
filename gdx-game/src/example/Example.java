@@ -10,7 +10,7 @@ public class Example extends WScreen{
 		Log.setVerbosity((byte)0b000_1111);
 		
 		Gdx.input.setCatchBackKey(true);
-		multiplexer.addProcessor(0, new InputAdapter(){
+		getMultiplexer().addProcessor(0, new InputAdapter(){
 			@Override
 			public boolean keyDown(int keycode){
 				if(keycode == Input.Keys.BACK){
@@ -20,7 +20,7 @@ public class Example extends WScreen{
 				return false;
 			}
 		});
-		multiplexer.addProcessor(2, new GestureDetector(new GestureDetector.GestureAdapter(){
+		getMultiplexer().addProcessor(2, new GestureDetector(new GestureDetector.GestureAdapter(){
 			@Override
 			public boolean pan(float x, float y, float dx, float dy){
 				y *= -1; dy *= -1;
