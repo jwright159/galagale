@@ -1,4 +1,4 @@
-package example;
+package wrightway.gdx.galagale;
 
 import android.app.*;
 import android.content.*;

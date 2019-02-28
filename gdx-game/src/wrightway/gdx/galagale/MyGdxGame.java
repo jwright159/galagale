@@ -1,4 +1,4 @@
-package example;
+package wrightway.gdx.galagale;
 
 import com.badlogic.gdx.*;
 
@@ -9,7 +9,7 @@ public class MyGdxGame extends Game{
 	public void create(){
 		game = this;
 		Gdx.app.setLogLevel(Application.LOG_DEBUG);
-		setScreen(new Example());
+		setScreen(new Galagale());
 	}
 
 	@Override
